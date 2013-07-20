@@ -5,6 +5,10 @@ import json
 import datetime
 import time
 
+
+import sqldb
+
+
 app = Flask(__name__)
 
 #_URL_ = "kitagami.org"
@@ -14,6 +18,8 @@ _PORT_ = 1234
 from APIs import root
 app.register_module(root.app, url_prefix="/")
 
+from APIs import gift
+app.register_module(gift.app, url_prefix="/gifmagazine")
 
 
 if __name__ == '__main__':
