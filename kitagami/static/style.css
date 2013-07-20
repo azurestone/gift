@@ -1,0 +1,10 @@
+
+body {
+	/*background-image: url(img.jpg);  */  
+	/*background-image: url(img2.jpg); */
+	font-size: 62.5%;
+	font-family: Comic Sans MS, Comic Sans MS;
+	overflow: hidden;
+    /*background-repeat   : no-repeat;*/
+    background-position : centercenter;
+}
