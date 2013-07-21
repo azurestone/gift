@@ -11,10 +11,10 @@ import sqldb
 app = Module(__name__)
 
 @app.route('', methods=['POST','GET'])
-def gifread():
+def like():
 	
-	import gift_config
-	api = gift_config.Conf()	
+	import like_config
+	api = like_config.Conf()	
 
 	if request.method == 'POST':
 		for slist in api.Request:
@@ -28,24 +28,11 @@ def gifread():
 	j = 0
 	tmp = {}
 	tmp2 = []
-	for i in db.Get_Column("git","*") :
-		#print i[0]
-		#tmp["id"]  = j#i[0]
-		#api.Return["gifurl"]  = i[1]
-		#api.Return["like"]  = i[2]
-		#api.Return["tag"]  = i[3]
-		#api.Return["title"]  = i[4]
-		tmp = {	
-				#"id": i[0],
-				"gifurl" : i[1].strip("\r\n").decode("shift-jis"),
-				"like" :  i[2],
-				"tag" : i[3],
-				"title" : i[4],
-				}
-		tmp2.append(tmp)
-		j = j + 1
-
-	#print tmp
+	for i in db.Get_Column("git","gifurl") :
+		print  i
+		if i == api.Request["gifurl"]:
+			print i[3]
+			db.UpDate_Column("git","like",i[3]+1,"gifurl",api.Request["gifurl"])
 	#print json.dumps(tmp,sort_keys=True, indent=4) 
 	
 	#return "Hello GIF-MAGAZINE"
