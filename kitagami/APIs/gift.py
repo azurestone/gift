@@ -37,10 +37,10 @@ def gifread():
 		#api.Return["title"]  = i[4]
 		tmp = {	
 				#"id": i[0],
-				"gifurl" : i[1].strip("\r\n").decode("shift-jis"),
+				"gifurl" : i[1].strip("\r\n"),
 				"like" :  i[2],
 				"tag" : i[3],
-				"title" : i[4],
+				"title" : u"%s" % i[4],
 				}
 		tmp2.append(tmp)
 		j = j + 1

@@ -31,7 +31,7 @@ class SQLDB:
 	
 	#=============================#
 	def UpDate_Column(self,table , setcol ,  setdata , itcol ,  itdate ):
-		#print "insert into %s ( %s ) values( %s );" % (table , column , val )
+		print "UPDATE %s SET %s = %s WHERE %s = %s;" % ( table , setcol ,  setdata , itcol ,  itdate )
 		
 		return self.con.execute( "UPDATE %s SET %s = %s WHERE %s = %s;" % ( table , setcol ,  setdata , itcol ,  itdate ))
 	#=============================#
