@@ -1,34 +1,34 @@
 
+
 =================================
-Flask ��������
+Flask 処理部分
 =================================
 
 
-�E GIF�A�h���X�擾
+・ GIFアドレス取得
 
-http://210.140.144.197:8080/gifmagazine�@
+http://210.140.144.197:8080/gifmagazine　
 
-��Get �������� Post�����ƁAJSON���A���Ă��܂��B
+にGet もしくは Postすると、JSONが帰ってきます。
 
-�E�@Like���̃J�E���g�A�b�v
+・　Like数のカウントアップ
 
 http://210.140.144.197:8080/gifmagazine/like
 
-�̐���[gifurl]���L�q����Get��������Post���Ă��������B
+の先に[gifurl]を記述してGetもしくはPostしてください。
 
-��
+例
 
 http://210.140.144.197:8080/gifmagazine/like?gifurl=http://cinemagraphs.com/images/demo/coco-eyes-mirror-429.gif
 
 
 
-�EFlask�̃o�b�N�G���h�N���R�}���h
+・Flaskのバックエンド起動コマンド
 
 >>nohup python Flask.py &
 
-���~��
+停止は
 
 ps -C python 
 kill ~
-
 
