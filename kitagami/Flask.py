@@ -18,9 +18,9 @@ from APIs import root
 app.register_module(root.app, url_prefix="/")
 
 from APIs import gift
-app.register_module(gift.app, url_prefix="/gifmagazine")
+app.register_module(gift.app, url_prefix="/api/gifmagazine")
 from APIs import like
-app.register_module(like.app, url_prefix="/gifmagazine/like")
+app.register_module(like.app, url_prefix="/api/gifmagazine/like")
 
 
 if __name__ == '__main__':

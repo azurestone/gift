@@ -37,7 +37,7 @@ def like():
 			#db.UpDate_Column("git","like","\"1234\"","gifurl", "\"%s\""  % api.Request["gifurl"]  )
 			db.UpDate_Column("git","like","\"%s\"" % likenum ,"gifurl", "\"%s\r\n\"" % api.Request["gifurl"]  )
 			db.Commit()
-		break
+			break
 	#print json.dumps(tmp,sort_keys=True, indent=4) 
 	
 	#return "Hello GIF-MAGAZINE"
