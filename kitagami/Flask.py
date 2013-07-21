@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 from flask import Flask, make_response,request,abort, redirect, url_for, make_response
-import pymongo
 import json  
 import datetime
 import time
