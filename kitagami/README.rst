@@ -22,3 +22,13 @@ http://210.140.144.197:8080/gifmagazine/like
 http://210.140.144.197:8080/gifmagazine/like?gifurl=http://cinemagraphs.com/images/demo/coco-eyes-mirror-429.gif
 
 
+
+・Flaskのバックエンド起動コマンド
+
+>>nohup python Flask.py &
+
+停止は
+
+ps -C python 
+kill ~
+
