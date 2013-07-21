@@ -1,5 +1,4 @@
 
-
 =================================
 Flask 処理部分
 =================================
@@ -32,3 +31,6 @@ http://210.140.144.197:8080/gifmagazine/like?gifurl=http://cinemagraphs.com/imag
 ps -C python 
 kill ~
 
+デリレク取りが以下のアドレスです
+
+/home/kitagami/git/gift/kitagami
